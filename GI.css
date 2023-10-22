@@ -1,0 +1,90 @@
+.calculator {
+    background-color: rgb(254, 215, 255);
+    display: grid;
+    place-items: centered;
+    width: 200px;
+    height: 300px;
+    border: solid 2px;
+    align-items: right;
+    margin: auto;
+    padding: 18px 20px;
+    margin-top: 200px;
+}
+
+
+.calcbuttons  {
+    display: grid;
+    grid-template-columns: repeat(4,27%);
+    grid-template-rows: repeat(5,28%); 
+    margin: 0 4px; 
+    margin-top: 35px;
+    height: 160px;
+    margin-right: 15px;
+}
+      
+
+.buttons {
+    padding: 15px 32px;
+    display: inline-block;
+    justify-content: space-evenly;
+    border-radius: 20px; 
+} 
+
+
+ .calcnumber {
+    background-color: rgb(192, 188, 188);
+    border: 0;
+    text-align: right;
+    width: 197px;
+    height: 30px;
+} 
+
+
+.yellow {
+    background-color: hsl(59, 89%, 68%);
+}
+
+.pink {
+    background-color:  pink;
+}
+
+.blue {
+    background-color: rgb(139, 248, 250);
+}
+
+
+@media screen and (max-width:100px){ /* Resizing for phone screens */
+
+    .calculator{
+        width: 100px;
+        height: auto;
+    }
+
+    .calcbuttons {
+        width: 100px;
+        height: auto;
+    }
+}    
+
+
+/* resizing for phone
+@media screen and (max-width: 375px) {
+   .calcbuttons
+   display: block;
+   margin: 8px;
+     /* width: 50%; 
+     height: auto;
+    grid-template-columns: repeat(4,27%);
+    grid-template-rows: repeat(5,28%);   */
+/* } */
+
+/* @media screen and (max-width: 768px) {
+    .calculator
+    /* display: block;
+    margin: px; */
+    width: 100px;
+    height: auto;
+} */ */
+
+    
+    
